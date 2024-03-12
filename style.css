@@ -1,0 +1,134 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Potta One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: brown;
+    font-size: 40px;
+    & p {
+        margin: 0;
+    }
+}
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.box {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.box1 {
+    background-image: url("./img1.jpg");
+    background-position: center;
+    background-size: cover;
+
+    & p:nth-child(1) {
+        transform: translateY(115px);
+    }
+
+    & p:nth-child(2),
+    p:nth-child(3) {
+        transform: translateY(-350px);
+    }
+
+    & p:nth-child(4),
+    p:nth-child(5) {
+        transform: translateY(350px);
+    }
+}
+
+.box2 {
+    background-image: url("./img2.jpg");
+    background-position: center;
+    background-size: cover;
+
+    & p:nth-child(2) {
+        transform: translateY(55px);
+    }
+
+    & p:nth-child(1),
+    p:nth-child(3) {
+        transform: translateY(-350px);
+    }
+
+    & p:nth-child(4),
+    p:nth-child(5) {
+        transform: translateY(350px);
+    }
+}
+
+.box3 {
+    background-image: url("./img3.jpg");
+    background-position: 0 0;
+    background-size: cover;
+
+    & p:nth-child(1),
+    p:nth-child(2) {
+        transform: translateY(-350px);
+    }
+
+    & p:nth-child(4),
+    p:nth-child(5) {
+        transform: translateY(350px);
+    }
+}
+
+.box4 {
+    background-image: url("./img4.jpg");
+    background-position: center;
+    background-size: cover;
+
+    & p:nth-child(4) {
+        transform: translateY(-55px);
+    }
+
+    & p:nth-child(1),
+    p:nth-child(2) {
+        transform: translateY(-350px);
+    }
+
+    & p:nth-child(3),
+    p:nth-child(5) {
+        transform: translateY(350px);
+    }
+}
+
+.box5 {
+    background-image: url("./img5.jpg");
+    background-position: 0 0;
+    background-size: cover;
+
+    & p:nth-child(5) {
+        transform: translateY(-115px);
+    }
+
+    & p:nth-child(1),
+    p:nth-child(2) {
+        transform: translateY(-350px);
+    }
+
+    & p:nth-child(3),
+    p:nth-child(4) {
+        transform: translateY(350px);
+    }
+}
+
+.box.open {
+    width: 60%;
+    transition: 0.5s;
+
+    & p {
+        transform: translateY(0);
+        transition: 0.5s;
+        font-size: 55px;
+    }
+}

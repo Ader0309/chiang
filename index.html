@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiang</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Rampart+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">
+            <p>強</p>
+            <p>強</p>
+            <p>出</p>
+            <p>乃</p>
+            <p>玩</p>
+        </div>
+        <div class="box box2">
+            <p>強</p>
+            <p>強</p>
+            <p>出</p>
+            <p>乃</p>
+            <p>玩</p>
+        </div>
+        <div class="box box3">
+            <p>強</p>
+            <p>強</p>
+            <p>出</p>
+            <p>乃</p>
+            <p>玩</p>
+        </div>
+        <div class="box box4">
+            <p>強</p>
+            <p>強</p>
+            <p>出</p>
+            <p>乃</p>
+            <p>玩</p>
+        </div>
+        <div class="box box5">
+            <p>強</p>
+            <p>強</p>
+            <p>出</p>
+            <p>乃</p>
+            <p>玩</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(".box").click(function () {
+            $(this).toggleClass("open");
+            $(this).siblings().removeClass("open");
+        })
+    </script>
+</body>
+
+</html>
